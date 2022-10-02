@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Carga de Notas - Cursado</title>
+    <link rel="stylesheet" href="css/Carga de Notas-Cursado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!--logo-buscador-perfil-->
+
+    <div id="container">
+        <div id="header">
+            <div class="Logo">
+                <img src="imagenes/logo_iset_terminado.jpg" alt="">
+                <div>
+                    <input type="text" placeholder="Buscar Alumno, Materia, etc.">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="btn">
+                    <button>Perfil</button>
+                </div>
+            </div>
+        </div>
+
+        <!--titulo opcion - eleccion de materia-->
+
+        <div id="nav">
+            <h2>Carga de Notas - Cursado</h2>
+            <div class="conatiner-Menu">
+                <ul class="Menu">
+                    <label for="Nombres-Materias">Materias:</label>
+                    <select name="Nombres-Materias" id="Nombres-Materias">
+                        <option value="#"></option>
+                        <option value="ciu">Ciudadanía y Espacio Público</option>
+                        <option value="intr-inf">Introducción a la informática</option>
+                        <option value="intr-redes">Introducción a Redes</option>
+                        <option value="bd">Bases de datos I</option>
+                        <option value="mat">Matemática I</option>
+                        <option value="progr">Programación I</option>
+                        <option value="ing">Inglés Técnico I</option>
+                        <option value="algor">Estructura de datos y algoritmos</option>
+                        <option value="tall">Taller de Programación I</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <!--caja contenedora - tabla y opciones-->
+
+        <div id="contenido">
+            <!--caja contenedora - tabla y opciones-->
+
+            <div id="section">
+                <div class="container-Tabla">
+                    <table border="5">
+                        <tr>
+                            <th>Alumno</th>
+                            <th>1º Parcial</th>
+                            <th>2º Parcial</th>
+                            <th>1º Recuperacion</th>
+                            <th>2º Recuperacion</th>
+                            <th>Condicion</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Nombre,Apellido."></td>
+
+
+                            <td>
+                                <select name="Parcial-Uno" id="Parcial-Uno">
+                                    <option value="#"></option>
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option>
+                                    <option value="tres">3</option>
+                                    <option value="cuatro">4</option>
+                                    <option value="cinco">5</option>
+                                    <option value="seis">6</option>
+                                    <option value="siete">7</option>
+                                    <option value="ocho">8</option>
+                                    <option value="nueve">9</option>
+                                    <option value="diez">10</option>
+                                </select>
+                            </td>
+
+
+                            <td>
+                                <select name="Parcial-Dos" id="Parcial-Dos">
+                                    <option value="#"></option>
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option>
+                                    <option value="tres">3</option>
+                                    <option value="cuatro">4</option>
+                                    <option value="cinco">5</option>
+                                    <option value="seis">6</option>
+                                    <option value="siete">7</option>
+                                    <option value="ocho">8</option>
+                                    <option value="nueve">9</option>
+                                    <option value="diez">10</option>
+                                </select>
+                            </td>
+
+
+                            <td>
+                                <select name="Recuperacion-Uno" id="Recuperacion-Uno">
+                                    <option value="#"></option>
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option>
+                                    <option value="tres">3</option>
+                                    <option value="cuatro">4</option>
+                                    <option value="cinco">5</option>
+                                    <option value="seis">6</option>
+                                    <option value="siete">7</option>
+                                    <option value="ocho">8</option>
+                                    <option value="nueve">9</option>
+                                    <option value="diez">10</option>
+                                </select>
+                            </td>
+
+
+                            <td>
+                                <select name="Recuperacion-Dos" id="Recuperacion-Dos">
+                                    <option value="#"></option>
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option>
+                                    <option value="tres">3</option>
+                                    <option value="cuatro">4</option>
+                                    <option value="cinco">5</option>
+                                    <option value="seis">6</option>
+                                    <option value="siete">7</option>
+                                    <option value="ocho">8</option>
+                                    <option value="nueve">9</option>
+                                    <option value="diez">10</option>
+                                </select>
+                            </td>
+
+
+
+                            <td>
+                                <select name="Condicion" id="Condicion">
+                                    <option value="#"></option>
+                                    <option value="reg">Regular</option>
+                                    <option value="lib">Libre</option>
+                                    <option value="pro">Promocion</option>
+                                </select>
+                            </td>
+
+                            <div class="Boton">
+                                <button id="Enviar">Enviar</button>
+                            </div>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="aside">
+                <div class="container-Botones ">
+                    <aside>
+                        <a href="#" id="botones-lista"><i class='fas fa-clipboard'></i>Carga de Notas - Cursado</a>
+                        <a href="#" id="botones-lista"><i class='fas fa-clipboard'></i>Carga de Notas - Examen</a>
+                        <a href="#" id="botones-lista"><i class='fas fa-clipboard'></i>Ver Notas - Examen</a>
+                        <a href="#" id="botones-lista"><i class='fas fa-clipboard'></i>Ver Notas - Cursado</a>
+                        <a href="#" id="botones-lista"><i class='fas fa-clipboard'></i>Revision de Notas</a>
+                    </aside>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div id="footer">
+                <img src="imagenes/logo_ministerio.png">
+                <a href="https://www.argentina.gob.ar/educacion/infod/" rel="nofollow" target="_blank">
+                    <img
+                        src="https://iset-tuc.infd.edu.ar/sitio/wp-content/plugins/edupress-escuela/public/skins/redinfod/img/logo_infod.png">
+                </a>
+            </div>
+        </div>
+
+</body>
